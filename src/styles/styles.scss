@@ -1,0 +1,36 @@
+@import "./typography.scss";
+
+@import "./components/header";
+@import "./components/home";
+@import "./components/card";
+
+/* Variables de color si el tema es nulo o light */
+html {
+    --primary-color: #171719;
+    --secondary-color: #fafafa;
+    --extra-element-color: #ffffff;
+    --moon: "\e902";
+    --box-shadow: 0 3px 4px rgba(224, 224, 224, 0.5);
+}
+
+/* Variables de color si el tema es dark */
+html[data-theme="dark"] {
+    --primary-color: #fffeff;
+    --secondary-color: #202d36;
+    --extra-element-color: #2b3743;
+    --moon: "\e900";
+    --box-shadow: none;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    margin: 0;
+}
+body, * {
+    font-family: 'Open Sans';
+}
+
+img {
+    max-width: 100%;
+}

@@ -1,0 +1,32 @@
+.country {
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 40px;
+    }
+    &__item {
+        width: calc(25% - 60px);
+        margin: 0 30px 60px 30px;
+        border-radius: 5px;
+        overflow: hidden;
+        background-color: var( --extra-element-color);
+        box-shadow: var(--box-shadow);
+        &__image {
+            height: 160px;
+            overflow: hidden;
+        }
+    }
+    &__text {
+        padding: 24px;
+        &__title {
+            margin-top: 0;
+        }
+        &__description {
+            display: flex;
+            &__field {
+                font-weight: 600;
+                margin-right: 8px;
+            }
+        }
+    }
+}
